@@ -135,13 +135,13 @@ function SideBar({ open, handleDrawerClose }) {
       </DrawerHeader>
 
       <Typography
-        sx={[{ mb: "10px", fontWeight: "bold"},
+        sx={[{ mb: "5px", fontWeight: "bold"},
           open
           ? {
               fontSize: "20px",
             }
           : {
-              fontSize: "14px",
+              fontSize: "15px",
             },
          ]}
         align="center"
@@ -160,8 +160,7 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 42,
-                    px: 2,
+                    minHeight: 30,
                     bgcolor:
                       location.pathname === item.path
                         ? theme.palette.mode === "dark"
@@ -223,8 +222,7 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 42,
-                    px: 2,
+                  minHeight: 30,
                     bgcolor:
                       location.pathname === item.path
                         ? theme.palette.mode === "dark"
@@ -285,8 +283,7 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 42,
-                    px: 2,
+                 minHeight: 30,
                     bgcolor:
                       location.pathname === item.path
                         ? theme.palette.mode === "dark"
