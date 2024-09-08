@@ -160,7 +160,7 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 45,
+                    minHeight: 42,
                     px: 2,
                     bgcolor:
                       location.pathname === item.path
@@ -223,7 +223,7 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 45,
+                    minHeight: 42,
                     px: 2,
                     bgcolor:
                       location.pathname === item.path
@@ -285,7 +285,7 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 45,
+                    minHeight: 42,
                     px: 2,
                     bgcolor:
                       location.pathname === item.path
