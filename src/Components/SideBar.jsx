@@ -135,11 +135,19 @@ function SideBar({ open, handleDrawerClose }) {
       </DrawerHeader>
 
       <Typography
-        sx={{ mb: "10px", fontWeight: "bold", fontSize: "22px" }}
+        sx={[{ mb: "10px", fontWeight: "bold"},
+          open
+          ? {
+              fontSize: "20px",
+            }
+          : {
+              fontSize: "14px",
+            },
+         ]}
         align="center"
         color="primary"
       >
-        AdminDashboard
+        Admin Dashboard
       </Typography>
 
       <Divider />
@@ -152,8 +160,8 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 48,
-                    px: 2.5,
+                    minHeight: 45,
+                    px: 2,
                     bgcolor:
                       location.pathname === item.path
                         ? theme.palette.mode === "dark"
@@ -215,8 +223,8 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 48,
-                    px: 2.5,
+                    minHeight: 45,
+                    px: 2,
                     bgcolor:
                       location.pathname === item.path
                         ? theme.palette.mode === "dark"
@@ -277,8 +285,8 @@ function SideBar({ open, handleDrawerClose }) {
                 onClick={() => navigate(item.path)}
                 sx={[
                   {
-                    minHeight: 48,
-                    px: 2.5,
+                    minHeight: 45,
+                    px: 2,
                     bgcolor:
                       location.pathname === item.path
                         ? theme.palette.mode === "dark"

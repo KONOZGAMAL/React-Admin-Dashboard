@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { Box, Stack, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import {
   AdminPanelSettingsOutlined,
   LockOpenOutlined,
@@ -8,7 +8,6 @@ import {
 } from "@mui/icons-material";
 import { rows } from "./data";
 import BreadCrumbs from "../../Components/BreadCrumbs";
-import Link from "@mui/material/Link";
 
 function Team() {
   const theme = useTheme();
@@ -92,25 +91,7 @@ function Team() {
 
   return (
     <Box sx={{ height: 600, width: "94%", mx: "auto" }}>
-      <Stack
-        direction={"row"}
-        justifyContent={"space-between"}
-        alignContent={"center"}
-      >
         <BreadCrumbs title={"TEAM"} subTitle={"Managing the Team Members"} />
-        <Box sx={{ textAlign: "right", mb: 1.3}}>
-          <Link
-            href={"/form"}
-            // @ts-ignore
-            sx={{
-              padding: "6px 8px",
-            }}
-            underline="none"
-          >
-            Add New User
-          </Link>
-        </Box>
-      </Stack>
       <DataGrid
         rows={rows}
         // @ts-ignore
